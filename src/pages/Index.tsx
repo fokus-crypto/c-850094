@@ -4,7 +4,7 @@ import { ArrowRight, Command, Smartphone, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
-import { PricingSection } from "@/components/pricing/PricingSection";
+import { CryptoSection } from "@/components/crypto/CryptoSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
@@ -140,9 +140,9 @@ const Index = () => {
         <FeaturesSection />
       </div>
 
-      {/* Pricing Section */}
-      <div id="pricing" className="bg-black">
-        <PricingSection />
+      {/* Crypto Section */}
+      <div id="crypto" className="bg-black">
+        <CryptoSection />
       </div>
 
       {/* Testimonials Section */}
