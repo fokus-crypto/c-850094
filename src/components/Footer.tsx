@@ -74,7 +74,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-light-gray/10">
             <p className="text-sm text-gray text-center">
-              © {new Date().getFullYear()} Rezaul Arif. All rights reserved.
+              © {new Date().getFullYear()} FokusCrypto. All rights reserved.
             </p>
           </div>
         </div>
