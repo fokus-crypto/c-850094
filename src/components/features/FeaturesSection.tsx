@@ -1,4 +1,3 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FeatureTab } from "./FeatureTab";
 import { FeatureContent } from "./FeatureContent";
@@ -10,12 +9,12 @@ export const FeaturesSection = () => {
       {/* Header Section */}
       <div className="max-w-2xl mb-20">
         <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left">
-          Buy/Sell Indicator
+          Advanced Trading
           <br />
-          <span className="text-gradient font-medium">Right Over Candlesticks</span>
+          <span className="text-gradient font-medium">Features & Tools</span>
         </h2>
         <p className="text-lg md:text-xl text-gray-400 text-left">
-          Our advanced AI places buy and sell indicators directly on your candlestick charts, making it easy to spot perfect entry and exit points at a glance.
+          Experience professional-grade trading tools and features designed for both novice and experienced crypto traders.
         </p>
       </div>
 
