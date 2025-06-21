@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -29,7 +30,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#4ADE80",
+          DEFAULT: "#1770D9",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -56,6 +57,27 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Brand Colors
+        'primary-blue': '#1770D9',
+        'light-cyan': '#D1EFFB',
+        'indigo': '#294C89',
+        'sky-blue': '#60B6F0',
+        'soft-blue': '#A7D6F8',
+        // Accent Colors
+        'coral': '#FF6B6B',
+        'lime-green': '#A3E635',
+        'amber': '#FBBF24',
+        // Semantic Colors
+        'success': '#16A34A',
+        'warning': '#EAB308',
+        'error': '#DC2626',
+        'info': '#0EA5E9',
+        // Neutral Colors
+        'black': '#0F172A',
+        'dark-gray': '#334155',
+        'gray': '#94A3B8',
+        'light-gray': '#E2E8F0',
+        'white': '#FFFFFF',
       },
       keyframes: {
         marquee: {

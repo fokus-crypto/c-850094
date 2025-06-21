@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <h3 className="font-medium text-lg">FokusCrypto</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-gray">
                 Empowering traders with advanced crypto trading solutions.
               </p>
               <div className="flex space-x-4">
@@ -27,12 +27,12 @@ const Footer = () => {
               <h4 className="font-medium">Trading</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#features" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Markets
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#pricing" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Trading Fees
                   </a>
                 </li>
@@ -43,12 +43,12 @@ const Footer = () => {
               <h4 className="font-medium">Resources</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Trading Guide
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Market Analysis
                   </a>
                 </li>
@@ -59,12 +59,12 @@ const Footer = () => {
               <h4 className="font-medium">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Terms of Service
                   </a>
                 </li>
@@ -72,8 +72,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-white/10">
-            <p className="text-sm text-muted-foreground text-center">
+          <div className="mt-8 pt-8 border-t border-light-gray/10">
+            <p className="text-sm text-gray text-center">
               © {new Date().getFullYear()} Rezaul Arif. All rights reserved.
             </p>
           </div>

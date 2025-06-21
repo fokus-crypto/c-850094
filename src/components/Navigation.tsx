@@ -50,14 +50,14 @@ const Navigation = () => {
     <header
       className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
         isScrolled 
-          ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[90%] max-w-2xl" 
-          : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
+          ? "h-14 bg-black/40 backdrop-blur-xl border border-light-gray/10 scale-95 w-[90%] max-w-2xl" 
+          : "h-14 bg-black w-[95%] max-w-3xl"
       }`}
     >
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
-            <Command className="w-5 h-5 text-primary" />
+            <Command className="w-5 h-5 text-primary-blue" />
             <span className="font-bold text-base">FokusCrypto</span>
           </div>
 
@@ -73,7 +73,7 @@ const Navigation = () => {
                     item.onClick();
                   }
                 }}
-                className="text-sm text-muted-foreground hover:text-foreground transition-all duration-300"
+                className="text-sm text-gray hover:text-white transition-all duration-300"
               >
                 {item.name}
               </a>
@@ -95,13 +95,13 @@ const Navigation = () => {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent className="bg-[#1B1B1B]">
+              <SheetContent className="bg-black">
                 <div className="flex flex-col gap-4 mt-8">
                   {navItems.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-lg text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-lg text-gray hover:text-white transition-colors"
                       onClick={(e) => {
                         e.preventDefault();
                         setIsMobileMenuOpen(false);
