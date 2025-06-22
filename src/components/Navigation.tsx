@@ -21,12 +21,12 @@ const Navigation = () => {
     if (sectionId === 'testimonials') {
       const testimonialSection = document.querySelector('.animate-marquee');
       if (testimonialSection) {
-        const yOffset = -100;
+        const yOffset = -100; // Offset to account for the fixed header
         const y = testimonialSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     } else if (sectionId === 'cta') {
-      const ctaSection = document.querySelector('.truth-button');
+      const ctaSection = document.querySelector('.button-gradient');
       if (ctaSection) {
         const yOffset = -100;
         const y = ctaSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -48,17 +48,17 @@ const Navigation = () => {
 
   return (
     <header
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
+      className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
         isScrolled 
-          ? "h-14 truth-header scale-95 w-[90%] max-w-2xl shadow-lg" 
-          : "h-14 bg-white/95 backdrop-blur-sm w-[95%] max-w-3xl shadow-sm"
+          ? "h-14 bg-black/40 backdrop-blur-xl border border-light-gray/10 scale-95 w-[90%] max-w-2xl" 
+          : "h-14 bg-black w-[95%] max-w-3xl"
       }`}
     >
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
-            <Command className="w-5 h-5 text-truth-blue" />
-            <span className="font-bold text-base text-truth-gray-900">FokusCrypto</span>
+            <Command className="w-5 h-5 text-primary-blue" />
+            <span className="font-bold text-base">FokusCrypto</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -73,7 +73,7 @@ const Navigation = () => {
                     item.onClick();
                   }
                 }}
-                className="text-sm text-truth-gray-600 hover:text-truth-blue transition-all duration-300 font-medium"
+                className="text-sm text-gray hover:text-white transition-all duration-300"
               >
                 {item.name}
               </a>
@@ -81,7 +81,7 @@ const Navigation = () => {
             <Button 
               onClick={() => scrollToSection('cta')}
               size="sm"
-              className="truth-button"
+              className="button-gradient"
             >
               Start Trading
             </Button>
@@ -91,17 +91,17 @@ const Navigation = () => {
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="truth-card">
+                <Button variant="outline" size="icon" className="glass">
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent className="bg-white">
+              <SheetContent className="bg-black">
                 <div className="flex flex-col gap-4 mt-8">
                   {navItems.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-lg text-truth-gray-600 hover:text-truth-blue transition-colors font-medium"
+                      className="text-lg text-gray hover:text-white transition-colors"
                       onClick={(e) => {
                         e.preventDefault();
                         setIsMobileMenuOpen(false);
@@ -118,7 +118,7 @@ const Navigation = () => {
                       setIsMobileMenuOpen(false);
                       scrollToSection('cta');
                     }}
-                    className="truth-button mt-4"
+                    className="button-gradient mt-4"
                   >
                     Start Trading
                   </Button>

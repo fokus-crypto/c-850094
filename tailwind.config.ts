@@ -20,9 +20,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        sans: ['Geist', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
-        sans: ['Roboto', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -31,7 +30,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#007BFF",
+          DEFAULT: "#1770D9",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -58,25 +57,27 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Truth Social Color Palette
-        'truth-blue': '#007BFF',
-        'truth-dark-blue': '#0056B3',
-        'truth-light-blue': '#E3F2FD',
-        'truth-gray': {
-          50: '#F8F9FA',
-          100: '#F1F3F4',
-          200: '#E8EAED',
-          300: '#DADCE0',
-          400: '#BDC1C6',
-          500: '#9AA0A6',
-          600: '#80868B',
-          700: '#5F6368',
-          800: '#3C4043',
-          900: '#202124',
-        },
-        'truth-red': '#EA4335',
-        'truth-green': '#34A853',
-        'truth-yellow': '#FBBC04',
+        // Brand Colors
+        'primary-blue': '#1770D9',
+        'light-cyan': '#D1EFFB',
+        'indigo': '#294C89',
+        'sky-blue': '#60B6F0',
+        'soft-blue': '#A7D6F8',
+        // Accent Colors
+        'coral': '#FF6B6B',
+        'lime-green': '#A3E635',
+        'amber': '#FBBF24',
+        // Semantic Colors
+        'success': '#16A34A',
+        'warning': '#EAB308',
+        'error': '#DC2626',
+        'info': '#0EA5E9',
+        // Neutral Colors
+        'black': '#0F172A',
+        'dark-gray': '#334155',
+        'gray': '#94A3B8',
+        'light-gray': '#E2E8F0',
+        'white': '#FFFFFF',
       },
       keyframes: {
         marquee: {

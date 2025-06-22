@@ -4,35 +4,35 @@ import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-12 mt-20 bg-white border-t border-truth-gray-200">
+    <footer className="w-full py-12 mt-20">
       <div className="container px-4">
-        <div className="truth-card p-8">
+        <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg text-truth-gray-900">FokusCrypto</h3>
-              <p className="text-sm text-truth-gray-600">
+              <h3 className="font-medium text-lg">FokusCrypto</h3>
+              <p className="text-sm text-gray">
                 Empowering traders with advanced crypto trading solutions.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="icon" className="hover:bg-truth-gray-100">
-                  <Twitter className="w-4 h-4 text-truth-gray-600" />
+                <Button variant="ghost" size="icon">
+                  <Twitter className="w-4 h-4" />
                 </Button>
-                <Button variant="ghost" size="icon" className="hover:bg-truth-gray-100">
-                  <Github className="w-4 h-4 text-truth-gray-600" />
+                <Button variant="ghost" size="icon">
+                  <Github className="w-4 h-4" />
                 </Button>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium text-truth-gray-900">Trading</h4>
+              <h4 className="font-medium">Trading</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-truth-gray-600 hover:text-truth-blue transition-colors">
+                  <a href="#features" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Markets
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-sm text-truth-gray-600 hover:text-truth-blue transition-colors">
+                  <a href="#pricing" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Trading Fees
                   </a>
                 </li>
@@ -40,15 +40,15 @@ const Footer = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium text-truth-gray-900">Resources</h4>
+              <h4 className="font-medium">Resources</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-truth-gray-600 hover:text-truth-blue transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Trading Guide
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-truth-gray-600 hover:text-truth-blue transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Market Analysis
                   </a>
                 </li>
@@ -56,15 +56,15 @@ const Footer = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium text-truth-gray-900">Legal</h4>
+              <h4 className="font-medium">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-truth-gray-600 hover:text-truth-blue transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-truth-gray-600 hover:text-truth-blue transition-colors">
+                  <a href="#" className="text-sm text-gray hover:text-primary-blue transition-colors">
                     Terms of Service
                   </a>
                 </li>
@@ -72,8 +72,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-truth-gray-200">
-            <p className="text-sm text-truth-gray-600 text-center">
+          <div className="mt-8 pt-8 border-t border-light-gray/10">
+            <p className="text-sm text-gray text-center">
               © {new Date().getFullYear()} FokusCrypto. All rights reserved.
             </p>
           </div>
