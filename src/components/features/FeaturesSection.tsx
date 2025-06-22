@@ -1,3 +1,4 @@
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FeatureTab } from "./FeatureTab";
 import { FeatureContent } from "./FeatureContent";
@@ -5,15 +6,15 @@ import { features } from "@/config/features";
 
 export const FeaturesSection = () => {
   return (
-    <section className="container px-4 py-24">
+    <section className="container px-4 py-24 bg-white">
       {/* Header Section */}
       <div className="max-w-2xl mb-20">
-        <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left">
+        <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-left text-truth-gray-900">
           Advanced Trading
           <br />
-          <span className="text-gradient font-medium">Features & Tools</span>
+          <span className="text-truth-blue font-bold">Features & Tools</span>
         </h2>
-        <p className="text-lg md:text-xl text-gray-400 text-left">
+        <p className="text-lg md:text-xl text-truth-gray-600 text-left leading-relaxed">
           Experience professional-grade trading tools and features designed for both novice and experienced crypto traders.
         </p>
       </div>
